@@ -1,0 +1,57 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+
+    <div class="list card">
+      <div class="item item-divider">检查js支持</div>
+      <div class="item item-body">
+        <a ng-click="checkapi();" class="weui_btn weui_btn_primary">检查</a>
+        <div>
+          通过这个按钮可以检测某js是否支持？
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Recent Updates</div>
+      <div class="item item-body">
+        <a ng-click="choseimage()" class="weui_btn weui_btn_primary">选择图片</a>
+        <div>
+          There is a fire in <b>sector 3</b>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells_title">带图标、说明、跳转的列表项</div>
+    <div class="weui_cells weui_cells_access">
+
+      <a class="weui_cell" href="javascript:;">
+        <div class="weui_cell_hd">
+          <img src="data:image/png;base64,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" alt="icon" style="width:20px;margin-right:5px;display:block">
+        </div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <p>cell standard</p>
+        </div>
+        <div class="weui_cell_ft">
+          说明文字
+        </div>
+      </a>
+      <a class="weui_cell" href="javascript:;">
+        <div class="weui_cell_hd">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEgAACxIB0t1+/AAAC45JREFUWMOVmHt0VdWdxz/7PO4zyb25ecMNAYkRIk8BmXYYQIrUJSq2otUFMiP1MaUdHZA1XZ2ZtnENXbZrdEarUttRxrH2ASg+Vq1tqICoCKiFQR4mISHkQd43ubm573vOb/64eRAJrM7vr3Pv+Z19Pvv7e+yzt2LYRGQm8C3gFqAcMJjI0kmk7wIy2AdeH1rpNNANRGxi/R0opXB4/RgON6C4gqWAemAX8IJSqoORJ0RkJfAkMPtyo0i4F/uTP2B/9DrS/BkS6UNVLcbc8hIqv5jkUIijv/keiXA3nvwy/JNnUlR5PYHyWRhO75XALGAfsFkpdUqJyGLgZaBqQpBkDOv9V7Hffg5pPA6pFOg6asFNGOt+iFa1EJRCbIuGD16hfv8O0vEIStMxnB7yg7OYuuh2SmcsQXe4rwS2D9igROQNYM2EML3tpF+pQQ68AqlEVjtXHtqaRzC+thmVmz/O37YydNV9SMPBl+lvO4WIDSLopouy6uXMWHE/OUUVV1LqR0pEYsAl6HZbPZmffQc5tncsiDkB9I3/jrFyA+jG5QYmOdRHy7F3aPzgVySGQqhhBX1lVcy+dSuFU+df7tEz2mVhnn4gC6ONyAUUV6AKg0g6Oaai2LQe+z2h1pOj/zlzCrj6b9Yza/VmTFcOiKA0nXBHPcf2bKOv+fjlgKbrNTU1NeNgulvIPPMQcmJ/VhmnB3ILwDShqxn70B7k/GlU5XWo3ACIzZl3f0HTR7uwUnEMhxvddGbBvH5CLSeI9V9AKQ2lNFLRAQYu1JEfvBZXXuEXgXQlIjI626EB0j99EHl/N7g8aMvuRlt2D1phEIkPkdn9Y+TD18AGtWI95uYXUKaTugM7OF27HaU0HB4fHn8ZhtNDKhYmGmrHzqTG56Zt4Z9czYI7a8gtnjbunnbxD+vgLuTQHvDmod+7DePb29Hnr0SVz0CrWoh2/S2gKdBBjtUirWcACM69Cf+kmSA26dggA+2f09v0KYNdjZfAAChNZ6D9NKf++Cyp+ODEQJKIYr+/G5SOvv7fMNY8jBqWPnt/CPvo22BLNpTREPaFJgC8+ZOYc+uj5AdnjQQ+++KLWppuOFFKQ2xrFKqr7kOaP35jHNBYqURCyGAv2pqH0W9+EHR9DCaVIPPqE8jRt8amoHSUwzXqU1Axj+vX/YQLp/YROn+CVDxCpLuJZKQPEZvJc26koGIu5z99i1DLZ4AgIjQf3UPZzKXkFk3NDjuaQ+kk9oWzqNKrUM6xwpNIP5mdj2P/7hlID/ciG5gyC3PbO2iFwUtCIraFlUnyyc7v03nmIABTrruV6+74PslYmPr3XuLc4d2InUFEmLHifmZ85cEv5JDpRKu4dhyM3XyK9FPfxH7jP8ZgBPDmo9/53QlhRsKhm67RakMp+s4fIxpqx+n1U33j31Ox4DZEABE66z4kFQtfmtTjZtndQvqJDcih10Gs4awHcovQ738C44Z7uJIppeENBEevY/0d9DR9nM0n00XVDfcRmDIbgKHeFiI9zWNAsbRNUyhJNGVflF2OrFpOBzjdkF+GWrwaffPT6CvXgzaWY7GDjQw8+wGx/WexI2NNs7hyMaYrF0QQ26LjzEGsdAIAd14x1as24faXkkkMEe1rzcJ+919+UPPYu538c20nAwmLZdNy0SSGpE6gLbgd/fq16MvXoa9+CK4NQeZFkBRa7mJQ2SqKvdtE/2O1RF87TvKTVvSiHMyKAC5fEcloPwPtp0FsUrEwxVd/CXdeEQCe/DK8gSCR7iYKr1pIXsl09FUbt9Y89m4XXUMZ0pawdnYBzthHWKe+jvK60WfchyqdDl6wm78HkZNIJoRWfBdKcyGJc5hT2zErc0meTpI80kJ831lw6rjmBCmYPh+Hx0cqNojpyqFs5lJcw0AAuUUVlFUvI6+kEs0wMU51JYikbDQFeU4NUwc0DygDu/1ZMEvRJz2EMgrRSu7F1n6LVnwPZAaw2p/B7vwfSLXhvmYa5vZn6X+8nfi+OvofqyV1ogP/I0upXLKOikW3YWfSODz+4YoRrFAMq2cIM9+D7s0Wk/6Vv3u05kBTFFvgS1O8fK3ah+YoBbMACR9AQu8g8XqQDMpRjHKUIYkG7JafgDWEXnofyrcENB9m1U24VywmdaaTdEMPqZMdxP5Ujx1NYZYEMJSLdGMvsb31DO44ysBT7xF+/hBDr3+GObMEsyKA4TI0tOGGWu4zh6819LKNoHTsxkeQ7l9j9ewEpWUrTmxU8Tr0yp+izMBIXQIKowx8/7iUxJ/bkMEkmfP99P/oTwz+12E0rwNrII49EEeSGbRcJ+bVRTgXBDGCWeWMcp8Dh65IWYKpX/z1qtBL1iPxs0jr49maHyl/Ryla+daLYLL+I+aaH8Qxo4Tk4WbQs53F6o5gybCbqeO9ZQ7+v12EY/5kNL97tEC0Cr8Dn0tHBBLpbNMeXf+VgR7cggqszgowIoRrCso1fpW+2DSvA6PcNzbOcHNEUyCQ8435FG9fy+Hpk9h8qJ8dfw6RsmQMaHrAgSXQn7A40RnnkbfbqG3IrsLKDKBK7gXtoi9EOwWSuUJXZFSZcWYJxvQCAg8v4YKt+Ke323n+SB/b9nfR2JftX1qeS+fLFV6UgqZQkiff72b74T5ePTkwLIpAvAHsDKBnZ5poRmKfX5bHjqbItA6MRIER2ZXXxL9lOUZlEZ+2RTnbl8ShZ78JRnw1gFWVuRR5dI53JDhwLorXobEo6EEBVvdu7NYnIXcBetULaJXbwSzA7tyBWLEJgVL1PaQ/72a0WkRQLhP/lmXk3jkXgMa+FClLECDgMQh4shEwAOaVuVk+LYc9p8NoShH0Gdww3QeJs9jNPwAzPwuTMy/7ArMIu2ETljLRy7einOWgObKxEhh68yR2KJYFsmy0fDfeNbPw3lyNMjQEaAwlsxEQYV6ZiwK3PqaQ09C4f1GAAo+BLUJpjklxjokdqoV4HVrxvWMwgF64Bq3iX5GenWT+dwWZU2uw+/cCED/cTHTX8Wxl2IJzYTme1dXE9tbTefcvie+tozducexCdk0r9Bism5ePPqzmaOYtqchhwzw/AJGkRSwlqJFZO8q+kLQG+qRN6DN+hfJWIbGPsXuPEn2njt6tb5FpD6NP9uF/dDklL69DOQ0y5/tJN/aSONDIkdYoDX1JdKXYuCDA0qk5o0OPlo6uKR7+chEnuxK81xzl4Lkwd824BVV0F0h6gkrSUf6bITOf5AcfMfR0N/H9vwHbJmftXPI3L8NxbSloCs+qa4gfaEQzNFhZxc7PBogkbb56dQ6b/qoQ7aLsH7frAKjvTfDg662kbeHX35hKRV4mK78+fn9ux9MMPPUesdoGMq1hNLeOc2GQnLVzcS2/irAjhN8oQVM62EKmbQDd0PjdIHxzTyvlPpP/vmMKc0rHbwsvAQL4vCfBlt+3U+gx+M/VkynwTLBLtYXkqU4yrQNofjdG0IdRlocydeoih0hYQ8z1rxr3yLGOOBtfayFjC8/dFhwXqmGLIiL9MoG1hVPy7Tdb5TtvtUrHYEr+EotnInKod5c813Cf9CXbxt070jIkf/18vax88awcbhm63BBHlIj8HHiACY5h4mmbN8+EOduX5K7ZfqoKs7uMrkQTJ8J7GcqERn3TdoJzseN0xhu4u3wbiwu+DkDGFv5QP8iLn4RYMtXLhvkBirwTngskgEeViEwHXgKWcBlrD6do6Esyp9SN3y38omkTH/e/wcjOSwBbLNx6HrdN2sqNJQ+hK4NI0qK2IUJLOMXN1+RRVei60hHWL4F/MJRSjSLyLeDHwErA+UXPyT4Hk/Icw0uJRY4RQFcmgqBQODQ35Z5ZrCx+gHn+r6IrY1ThRUEPt1f7RvvMBBYBfgv8UCkVHvUSkQBwB9mzommAebkRepLnqe16nguJOnL0ALN8NzDbtxK/WcL/wxLAaWAn8EelVAzg/wAwWz+rIKjWLwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0xMC0wNlQwODoxMTowMiswMDowMOTWjBcAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMTAtMDZUMDg6MTE6MDIrMDA6MDCVizSrAAAAAElFTkSuQmCC" alt="" style="width:20px;margin-right:5px;display:block">
+        </div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <p>cell standard</p>
+        </div>
+        <div class="weui_cell_ft">
+          说明文字
+        </div>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
